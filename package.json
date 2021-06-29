@@ -1,0 +1,45 @@
+{
+  "name": "dev32-react-library",
+  "version": "1.0.6",
+  "description": "react components library for jalafoundation dev32",
+  "main": "dist/index.js",
+  "proxy": "http://localhost:6006",
+  "scripts": {
+    "build-lib": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "set PORT=3000 && start-storybook",
+    "build-storybook": "build-storybook",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "dev32",
+    "jalafoundation",
+    "react"
+  ],
+  "author": "Cristhian Ortiz",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-react": "^7.14.5",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/react": "^6.3.0",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.52.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
